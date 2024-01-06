@@ -1,0 +1,182 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
+
+/* VARIABLES */
+:root{
+    --primary-color: #FB6A27;
+    --dark-color: #0f0f0f;
+    --gray-color: gray;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+    
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/* GLOBAL CSS */
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* CSS SECTION */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* HEADER */
+.header-section .header-title {
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+    color: white;
+}
+
+.header-section .header-skill:hover {
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i {
+    transition: .3s;
+}
+
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+
+.header-section .header-img {
+    width: 70%;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+/* PORTOFOLIO */
+.portofolio-section .card-img-top {
+    object-fit: cover;
+}
+
+.portofolio-section .card {
+    height: 240px;
+}
+
+.portofolio-section .card-body {
+    transition: ease-in-out .3s;
+}
+
+.portofolio-section .card-body:hover {
+    transform: scale(1.03);
+}
+
+/* Skills */
+
+.skills-section .card-section {
+    height: 200px;
+    width: 200%;
+}
+
+.skills-section .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar .progress {
+    background-color: var(--primary-color);
+}
+
+.skills-section .skills-img {
+    width: 70%;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+/* ABOUT ME */
+.aboutme-section .aboutme-text {
+    text-align: center;
+}
+
+.aboutme-section .container, .contact-section .container {
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.aboutme-section .aboutme-text {
+    padding: 20px;
+}
+
+/* CONTACT */
+.contact-section .container {
+    height: 270px;
+}
+
+.contact-section .contact-btn {
+    background-color: #232D3F;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-section .contact-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 768px) {
+    .portofolio-section .card-img-top {
+        height: 100px;
+    }
+
+    
+    .contact-section .container {
+        height: 400px;
+    }
+    
+}
